@@ -2,17 +2,17 @@
     <h3>Class e Style-Binding</h3>
    
     <p>Selecione um alerta</p>
-    <div class="d-flex">
-        <p class="col-1 alert {{select.value}}" role="alert"> Inbound</p>
-        <p class="col-1 alert " [ngClass]="select.value" role="alert"> ngClass</p>
-        <p class="col-1 alert" [class.alert-primary]="select.value=='alert-primary'" role="alert">primary</p>
-        <p class="col-1 alert" [class.alert-secondary]="select.value=='alert-secondary'" role="alert">secondary</p>
-        <p class="col-1 alert" [class.alert-success]="select.value=='alert-success'" role="alert">success</p>
-        <p class="col-1 alert" [class.alert-danger]="select.value=='alert-danger'" role="alert">danger</p>
-        <p class="col-1 alert" [class.alert-warning]="select.value=='alert-warning'" role="alert">warning</p>
-        <p class="col-1 alert" [class.alert-info]="select.value=='alert-info'" role="alert">info</p>
-        <p class="col-1 alert" [class.alert-light]="select.value=='alert-light'" role="alert">light</p>
-        <p class="col-1 alert" [class.alert-dark]="select.value=='alert-dark'" role="alert">dark</p>
+    <div class="row">
+        <p class="col-md-1 alert {{select.value}}" role="alert"> Inbound</p>
+        <p class="col-md-1 alert " [ngClass]="select.value" role="alert"> ngClass</p>
+        <p class="col-md-1 alert" [class.alert-primary]="select.value=='alert-primary'" role="alert">primary</p>
+        <p class="col-md-1 alert" [class.alert-secondary]="select.value=='alert-secondary'" role="alert">secondary</p>
+        <p class="col-md-1 alert" [class.alert-success]="select.value=='alert-success'" role="alert">success</p>
+        <p class="col-md-1 alert" [class.alert-danger]="select.value=='alert-danger'" role="alert">danger</p>
+        <p class="col-md-1 alert" [class.alert-warning]="select.value=='alert-warning'" role="alert">warning</p>
+        <p class="col-md-1 alert" [class.alert-info]="select.value=='alert-info'" role="alert">info</p>
+        <p class="col-md-1 alert" [class.alert-light]="select.value=='alert-light'" role="alert">light</p>
+        <p class="col-md-1 alert" [class.alert-dark]="select.value=='alert-dark'" role="alert">dark</p>
     </div>
     <select #select (change)="0">
         <option value="alert-primary">alert-primary</option>
