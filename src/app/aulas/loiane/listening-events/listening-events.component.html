@@ -1,0 +1,23 @@
+<h3>Escutando eventos</h3>
+<div class="row mt-3" style="height: 5em;">
+
+    <div class="col-md-2 text text-center" style=" background-color:  #E3DDC5;" 
+        #me (mouseenter)="me.textContent =  'Entrou' " 
+        (mouseleave)="me.textContent =  'Saiu' ">Passe o Mouse
+    </div>
+    
+    <div class="col-md-3 d-flex justify-content-center align-items-center">
+        <div>
+            Você digitou: {{ta.value}}
+            <br>
+            <input type="text" #ta (keyup)="0">
+        </div>
+    </div>
+    
+    <div class="col-md-2 d-flex justify-content-center align-items-center" style="background-color: gray;">
+        <button class="btn btn-primary" #conta 
+            (click)="conta.textContent = conta.textContent=='Clicou' ? 'Desclicou' : 'Clicou'">Clique
+        </button>
+    </div>   
+    <div class="col"></div>
+</div>
