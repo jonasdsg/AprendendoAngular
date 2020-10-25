@@ -4,5 +4,9 @@ import { Component } from '@angular/core';
     templateUrl: './two-way-data-binding.component.html'
 })
 export class TwoWayDataBindingComponent{
-    public variavel:string = '';
+    variavel:string = '';
+    
+    get valorVariavel():string{
+        return this.variavel;
+    }
 }
