@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="row">
+        {{ valorRecebido ? 'O valor é : ' + valorRecebido : "O componente não recebeu nenhum evento"}}
+
+    </div>
+    <div class="row">
+        <loiane-output-property-child 
+        (emissor)="recebeEvento($event)">
+        </loiane-output-property-child>
+    </div>
+</div>
